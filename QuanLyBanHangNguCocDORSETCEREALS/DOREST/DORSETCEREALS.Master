@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DORSETCEREALS.Master.cs" Inherits="DOREST.TRANGCHU" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 297px;
+            width: 1471px;
+        }
+        .auto-style2 {
+            height: 295px;
+        }
+        .auto-style3 {
+            height: 8px;
+        }
+        .auto-style5 {
+            height: 50px;
+        }
+        .auto-style6 {
+            height: 52px;
+        }
+        .auto-style4 {
+            margin-left: 349px;
+        }
+        .auto-style7 {
+            height: 149px;
+        }
+        .auto-style8 {
+            height: 158px;
+        }
+        .auto-style9 {
+            height: 149px;
+            width: 199px;
+        }
+        .auto-style10 {
+            height: 52px;
+            width: 259px;
+        }
+        .auto-style11 {
+            height: 8px;
+            width: 199px;
+        }
+        .auto-style12 {
+            height: 158px;
+            width: 199px;
+        }
+        .auto-style13 {
+            height: 52px;
+            width: 199px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style5">
+                <tr>
+                    <td>
+                        <img alt="" class="auto-style2" src="Image_giaodien/dorest.png" /></td>
+                </tr>
+                <tr>
+                    <td class="auto-style10">
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style9">
+                                    <img alt="" class="auto-style25" src="Image_giaodien/logo.png" /></td>
+                                <td class="auto-style7" style="font-family: 'Times New Roman', Times, serif; font-size: 42px; font-weight: bold; font-style: inherit; font-variant: small-caps; color: #A7D50F; text-align: center;">
+                                    <br />
+                                    BLENDED FOR REAL BREAKFAST PLEASURE<br />
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style13">
+                                    <asp:Menu ID="Menu1" runat="server" DynamicHorizontalOffset="2" Font-Bold="True" Font-Italic="False" Font-Names="Times New Roman" Font-Size="XX-Large" ForeColor="#A4D11B" Height="30px" OnMenuItemClick="Menu1_MenuItemClick" StaticSubMenuIndent="100px" Width="200px">
+                                        <DynamicHoverStyle BackColor="#243A49" ForeColor="White" />
+                                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                                        <Items>
+                                            <asp:MenuItem NavigateUrl="~/Trangtrangchu.aspx" Text="Trang chủ" Value="menutrangchu"></asp:MenuItem>
+                                            <asp:MenuItem Text="Sản phẩm" Value="menusanpham" NavigateUrl="~/TrangSanPham.aspx"></asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/Tranggioithieu.aspx" Text="Giới thiệu" Value="menugioithieu"></asp:MenuItem>
+                                            <asp:MenuItem Text="Giỏ hàng" Value="menugiohang" NavigateUrl="~/TrangGiohang.aspx"></asp:MenuItem>
+                                            <asp:MenuItem Text="Đăng nhập" Value="menulogin"></asp:MenuItem>
+                                        </Items>
+                                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                        <StaticSelectedStyle BackColor="#FFCC66" />
+                                        <StaticItemTemplate>
+                                            <%# Eval("Text") %>
+                                        </StaticItemTemplate>
+                                    </asp:Menu>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </td>
+                                <td class="auto-style6">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style11"></td>
+                                <td class="auto-style3">
+                                    <asp:Login ID="Login1" runat="server" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" Height="227px" LoginButtonText="Đăng nhập" OnAuthenticate="Login1_Authenticate" PasswordLabelText="Mật khẩu:" RememberMeText="Ghi nhớ lần đăng nhập lần sau" TitleText="Đăng nhập" UserNameLabelText="Tên đăng nhập:" Width="500px" Visible="False" CssClass="auto-style4" DestinationPageUrl="~/TrangQL.aspx">
+                                        <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                                        <LoginButtonStyle BackColor="White" BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" />
+                                        <TextBoxStyle Font-Size="0.8em" />
+                                        <TitleTextStyle BackColor="#507CD1" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+                                    </asp:Login>
+                                    <br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style12">
+                                    <img alt="" class="auto-style25" src="Image_giaodien/logo.png" /></td>
+                                <td class="auto-style8" style="font-family: 'times New Roman', Times, serif; background-color: #243A49; color: #A4D10F; text-align: center;">
+                                    <br />
+                                    Copyright © 2023 Dorset Cereals, Poole, Dorset, BH12 4QW <br />
+                Company registered at Weston Centre, 10 Grosvenor Street, London, United Kingdom W1K 4QY
+                <br />
+                Company registered in England and Wales | Company Registered Number 79590
+                <br />
+                unsubscribe<br />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    </body>
+</html>
